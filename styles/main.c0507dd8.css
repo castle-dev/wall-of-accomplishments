@@ -9,7 +9,7 @@ a {
   }
  
 body {
-  background: #f9f9f9
+  background: #f9f9f9;
   }
  
 .nav-pic {
@@ -32,15 +32,26 @@ body {
 .navbar-header {
   background-color: #F9f9f9
   }
+  
+.postIt-wrapper {
+  margin: auto;
+  margin-left: -10px;
+  text-align: center;
+  overflow: hidden;
+  }
+	
+.postIt-container {
+	display: inline-block;
+	}
  
 .postIt {
   color: #f9f9f9;
+  font-size: 130%;
   display: block;
-  height: 20em;
-  width: 20em;
-  padding: 2em;
-  margin: 2em;
-  float: left;
+  height: 280px;
+  width: 280px;
+  padding: 20px;
+  margin: 20px;
   box-shadow: 5px 5px 7px rgba(0,0,0,.3);
   -webkit-transition: -webkit-transform .15s linear;
   -webkit-transform: rotate(-6deg);
@@ -88,17 +99,17 @@ body {
 .postIt-container:nth-of-type(4n+3) .postIt {
 	position: relative;
 	top: 10px;
-  -webkit-transform: rotate(-11deg);
-  -o-transform: rotate(-11deg);
-  -moz-transform: rotate(-11deg)
+  -webkit-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -moz-transform: rotate(2deg)
 	} 
  
 .postIt:focus,
 .postIt:hover {
   box-shadow: 10px 10px 7px rgba(0,0,0,.4);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
+  -webkit-transform: scale(1.1) !important;
+  -moz-transform: scale(1.1) !important;
+  -o-transform: scale(1.1) !important;
   position: relative;
   z-index: 5
   }
@@ -162,4 +173,20 @@ a {
   color:#bbb
   }
  
- 
+ .delete-link {
+ 	display: block;
+ 	text-indent: -9000px;
+ 	width: 20px;
+ 	height: 20px;
+ 	cursor: pointer;
+ 	position: absolute;
+ 	top: 10px;
+ 	left: 10px;
+ 	background-image: url('../images/delete.png');
+ 	background-position: center top;
+ 	background-size: 100%;
+ 	}
+ 	
+ .delete-link:hover {
+   background-position: center bottom;
+   }

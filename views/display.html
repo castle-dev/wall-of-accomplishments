@@ -1,10 +1,12 @@
 <html> <head> <meta charset="utf-8"> <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width"> <title> Wall of Achievements</title>
 
 <body ng-app="app" ng-controller="viewPost">
-	<div class="postIt-container" ng-repeat="post in posts | orderBy:'-createAt'">
-		<div class="postIt">
-			<div class="Name"> <p>{{ post.name }}</p> </div>
-			<div class="AC"> <p>{{ post.accomplishment}}</p> </div>
-			<div class="dlink"> <a ng-click="deletePost(post)">delete</a> </div>
-		</div><!--postIt-->
-	</div><!--ng-repeat-->
+	<div class="postIt-wrapper">
+		<div class="postIt-container" ng-repeat="post in posts | orderBy:'-createAt'">
+			<div class="postIt">
+				<div class="Name"> <p>{{ post.name }}</p> </div>
+				<div class="AC"> <p>{{ post.accomplishment}}</p> </div>
+				<div class="dlink"> <a class="delete-link" ng-click="deletePost(post)">delete</a> </div>
+			</div><!--postIt-->
+		</div><!--postIt-container-->
+	</div><!--postIt-wrapper-->
