@@ -77,6 +77,21 @@ body {
 	color: #34495e;
 	}
 
+.postIt-container:nth-of-type(5n+1) .postIt {
+	position: relative;
+	top: 20px;
+  -webkit-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg)
+	}
+
+.postIt-container:nth-of-type(4n+3) .postIt {
+	position: relative;
+	top: 10px;
+  -webkit-transform: rotate(-11deg);
+  -o-transform: rotate(-11deg);
+  -moz-transform: rotate(-11deg)
+	} 
  
 .postIt:focus,
 .postIt:hover {
