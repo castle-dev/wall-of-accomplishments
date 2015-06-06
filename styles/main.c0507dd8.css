@@ -11,10 +11,17 @@ a {
 body {
   background: #f9f9f9;
   }
+
+.navbar {
+  margin-bottom: 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #c8c8c8;
+  border-radius: 0;
+  }
  
 .nav-pic {
   margin: -2px 5px 0 0;
-  max-height:60px
+  max-height: 60px;
   }
  
 #form {
@@ -112,7 +119,7 @@ body {
  
 .postIt:focus,
 .postIt:hover {
-  box-shadow: 10px 10px 7px rgba(0,0,0,.4);
+  box-shadow: 7px 7px 7px rgba(0,0,0,.4);
   -webkit-transform: scale(1.1) !important;
   -moz-transform: scale(1.1) !important;
   -o-transform: scale(1.1) !important;
@@ -199,6 +206,14 @@ a {
    
 @media only screen and (max-width: 550px) {  
 
+  .navbar {
+    padding: 0;
+    }
+    
+   .navbar-form .accomplishment-field {
+     width: 100%;
+     }
+      
 	.postIt-wrapper {
 		width: 380px;
 		margin: 0 auto;
