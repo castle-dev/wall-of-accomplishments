@@ -1,5 +1,16 @@
 <html> <head> <meta charset="utf-8"> <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width"> <title> Wall of Achievements</title>
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" ></script>
+
+<script type="text/javascript">
+// Random bg images
+ var images = ['bg01.png', 'bg02.gif', 'bg03.gif', 'bg04.gif', 'bg05.gif', 'bg06.gif', 'bg07.jpg', 'bg08.gif', 'bg09.gif', 'bg10.jpg', 'bg11.jpg'];
+ $('.bcontainer').css({'background': 'url(images/background/' + images[Math.floor(Math.random() * images.length)] + ')'});
+</script>
+
+
+</head>
+
 <body ng-app="app" ng-controller="viewPost">
 	<div class="postIt-wrapper">
 		<div class="postIt-container" ng-repeat="post in posts | orderBy:'-createAt'">
