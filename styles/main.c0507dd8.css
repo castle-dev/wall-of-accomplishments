@@ -1,3 +1,5 @@
+/* Wall of Accomplishments */
+
 .nav-pic,
 .prof-img {
   border-radius: 100px
@@ -57,6 +59,7 @@ body {
 	}
  
 .postIt {
+  background: #34495e;
   color: #f9f9f9;
   font-size: 130%;
   display: block;
