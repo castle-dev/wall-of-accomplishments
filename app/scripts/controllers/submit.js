@@ -7,7 +7,6 @@ app.controller('enterPost', function ($scope, Post) {
 
     $scope.submitPost = function () {
         Post.create($scope.post).then(function () {
-          console.log('stuff being created');
           var form = document.getElementById('addPost');
           form.reset();
           $scope.post.name = null;
@@ -18,6 +17,4 @@ app.controller('enterPost', function ($scope, Post) {
     $scope.deletePost = function (post) {
         Post.delete(post);
     };
-
-
 });
