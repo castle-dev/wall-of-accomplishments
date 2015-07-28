@@ -1,13 +1,17 @@
-# woa
+### Getting Started
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.1.
+Install **node.js**.
 
-## Build & development
+After that, clone this repo (`git clone https://github.com/castle-dev/wall-of-accomplishments.git`), open the folder (`cd wall-of-accomplishments`), and install the dependencies:
 
-Run `grunt` for building and `grunt serve` for preview.
+    $ npm install
+    $ bower install
+    $ grunt serve
 
-## Testing
+You are now ready to go, your application is available at **http://127.0.0.1:3000**.
 
-Running `grunt test` will run the unit tests with karma.
-# wall-of-accomplishments
+When you are ready to build a production release there is a task for that:
+
+    $ grunt serve:dist
+
+This task will lint your code, optimize css, js, and images files. After the task has successfully finished, you can find an optimized version of your project inside the  `/dist` folder.
