@@ -32,7 +32,7 @@ var app = angular
         redirectTo: '/'
       });
   });
-app.constant('FIREBASE_URL', 'torrid-torch-9438.firebaseio.com');
+app.constant('FIREBASE_URL', 'https://torrid-torch-9438.firebaseio.com/');
 app.controller('viewPost', function ($scope, Post) {
     $scope.derp = 'derp';
     $scope.posts = Post.all;

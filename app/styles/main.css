@@ -22,7 +22,7 @@ body {
 .navbar-brand {
     float: left;
     height: 50px;
-    padding: 5px 55px;
+    padding: 5px 10px 5px;
     font-size: 18px;
     line-height: 20px
 }
