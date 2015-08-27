@@ -61,25 +61,25 @@ body {
     height: 20px;
     cursor: pointer
 }
-postIt-container:nth-of-type(2n+1) .postIt {
+postIt-container:nth-of-type(7n+1) .postIt {
     background: #2e9889
 }
-.postIt-container:nth-of-type(3n+2) .postIt {
+.postIt-container:nth-of-type(7n+2) .postIt {
     background: #59a1c3
 }
-.postIt-container:nth-of-type(4n+3) .postIt {
+.postIt-container:nth-of-type(7n+3) .postIt {
     background: #c54243
 }
-.postIt-container:nth-of-type(5n+4) .postIt {
+.postIt-container:nth-of-type(7n+4) .postIt {
     background: #5F7378
 }
-.postIt-container:nth-of-type(6n+5) .postIt {
+.postIt-container:nth-of-type(7n+5) .postIt {
     background: #d9aa2e
 }
 .postIt-container:nth-of-type(7n+6) .postIt {
     background: #9c6faa
 }
-.postIt-container:nth-of-type(8n+7) .postIt {
+.postIt-container:nth-of-type(7n+7) .postIt {
     background: #ebebec;
     color: #34495e
 }
