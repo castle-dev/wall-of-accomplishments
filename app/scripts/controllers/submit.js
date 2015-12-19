@@ -1,8 +1,7 @@
 
-//controller for submit page
+//controller for post submission
 app.controller('enterPost', function ($scope, Post) {
     'use strict';
-    $scope.derp = 'derp';
     $scope.posts = Post.all;
 
     $scope.submitPost = function () {
@@ -11,6 +10,7 @@ app.controller('enterPost', function ($scope, Post) {
           form.reset();
           $scope.post.name = null;
           $scope.post.accomplishment = null;
+          $scope.post.who = null;
         });
     };
 

@@ -24,17 +24,12 @@ var app = angular
         templateUrl: 'views/display.html',
         controller: 'viewPost'
       })
-      .when('/submit', {
-        templateUrl: 'views/submit.html',
-        controller: 'enterPost'
-      })
       .otherwise({
         redirectTo: '/'
       });
   });
-app.constant('FIREBASE_URL', 'https://torrid-torch-9438.firebaseio.com/');
+app.constant('FIREBASE_URL', 'https://fiery-torch-5472.firebaseio.com/');
 app.controller('viewPost', function ($scope, Post) {
-    $scope.derp = 'derp';
     $scope.posts = Post.all;
     $scope.deletePost = function (post) {
         Post.delete(post);
