@@ -28,7 +28,8 @@ var app = angular
         redirectTo: '/'
       });
   });
-app.constant('FIREBASE_URL', 'https://fiery-torch-5472.firebaseio.com/');
+// app.constant('FIREBASE_URL', 'https://fiery-torch-5472.firebaseio.com/'); //Testing firebase
+app.constant('FIREBASE_URL', 'https://torrid-torch-9438.firebaseio.com/'); //Live firebase
 app.controller('viewPost', function ($scope, Post) {
     $scope.posts = Post.all;
     $scope.deletePost = function (post) {
