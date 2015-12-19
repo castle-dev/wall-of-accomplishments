@@ -27,7 +27,8 @@
 		    <div class="postIt-container" ng-repeat="post in posts | orderBy:'-createAt'">
   			<div class="postIt">
 				<div class="Name"> <p>{{ post.name }}</p> </div>
-				<div class="AC"> <p>{{ post.accomplishment}}</p> </div>
+				<div class="AC"> <p>{{ post.accomplishment}}</p> </div><br>
+        <div class="Who"> <p>{{ post.who}}</p> </div>
 				<div class="dlink"> <a class="delete-link" ng-click="deletePost(post)">delete</a> </div>
 			</div><!--postIt-->
 	  </div><!--postIt-container-->
