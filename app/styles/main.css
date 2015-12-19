@@ -10,11 +10,8 @@ body {
     background: #f9f9f9
 }
 .nav-pic {
-  margin: -2px 5px 0 0;
-  max-height: 60px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
+    margin: -2px 5px 0 0;
+    max-height: 60px
 }
 #form {
     background-color: #F9F9F9
@@ -22,23 +19,21 @@ body {
 .navbar-brand {
     float: left;
     height: 50px;
-    padding: 5px 10px 5px;
+    padding: 5px 55px;
     font-size: 18px;
     line-height: 20px
 }
 .navbar-header {
     background-color: #F9f9f9
 }
-
 .postIt-wrapper {
     margin: auto auto auto -10px;
     text-align: center;
     overflow: hidden
 }
 .postIt-container {
-	display: inline-block;
-	}
-
+    display: inline-block
+}
 .postIt {
     color: #f9f9f9;
     font-size: 130%;
@@ -55,34 +50,44 @@ body {
     -o-transform: rotate(2deg);
     -moz-transform: rotate(2deg)
 }
-
 .delete-link,
 .vote {
     height: 20px;
     cursor: pointer
 }
-postIt-container:nth-of-type(7n+1) .postIt {
-    background: #2e9889
+postIt-container:nth-of-type(8n+1) .postIt {
+    background: #3ab4ad
 }
-.postIt-container:nth-of-type(7n+2) .postIt {
+.postIt-container:nth-of-type(8n+2) .postIt {
     background: #59a1c3
 }
-.postIt-container:nth-of-type(7n+3) .postIt {
+.postIt-container:nth-of-type(8n+3) .postIt {
     background: #c54243
 }
-.postIt-container:nth-of-type(7n+4) .postIt {
-    background: #5F7378
+.postIt-container:nth-of-type(8n+4) .postIt {
+    background: #3ab4ad
 }
-.postIt-container:nth-of-type(7n+5) .postIt {
+.postIt-container:nth-of-type(8n+5) .postIt {
     background: #d9aa2e
 }
-.postIt-container:nth-of-type(7n+6) .postIt {
+.postIt-container:nth-of-type(8n+6) .postIt {
     background: #9c6faa
 }
-.postIt-container:nth-of-type(7n+7) .postIt {
+.postIt-container:nth-of-type(8n+7) .postIt {
+    background: #34495e;
+}
+.postIt-container:nth-of-type(8n+8) .postIt {
     background: #ebebec;
     color: #34495e
 }
+
+.postIt-container:nth-of-type(80n+80) .postIt {
+    background-color: #ebebec;
+    color: white;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    background-image: url('../images/background/bg17.jpg');
+}
+
 .postIt-container:nth-of-type(5n+1) .postIt {
     position: relative;
     top: 20px;
@@ -127,10 +132,6 @@ postIt-container:nth-of-type(7n+1) .postIt {
 .nav-tabs {
     margin-top: 30px
 }
-.vote {
-    height: 20px;
-    cursor: pointer
-}
 .auth-forms {
     max-width: 400px;
     margin: 0 auto;
@@ -161,7 +162,7 @@ a {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-image: url('../images/delete.png');
+    background-image: url(../images/delete.png);
     background-position: center top;
     background-size: 100%
 }
